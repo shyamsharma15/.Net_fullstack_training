@@ -1,0 +1,305 @@
+using System; //package/namespace  name -- > imported the built in packag
+
+     class Program
+    {
+        //main is the entry point of your program
+       public static void Main(string[] args)
+        {
+
+                // int - 4bytes ,
+                //  long - 8 bytes , 
+                // float -4 bytes ,
+                // double - 8 bytes ,
+                //  bool - 1 byte ,
+                // char - 2bytes ,
+                //  string - 2bytes per character
+
+            {
+                // datatype declaration with initialization 
+                // variable is a container contains value
+                int number = 456;
+                int a ;
+                int b;
+                string s = "Hello";
+                char ch = 'B';
+                //Int16
+                short num1 = 234;
+                //Int32
+                //Int64 
+                long num = 5767;
+
+                double price = 45.00;
+              //  float f = 45.00M;
+                Decimal marks = 45.7M;
+
+                Console.WriteLine($"Value1 : {number} second number : {num1} ");
+
+                Console.WriteLine("Char : " + ch);
+
+                Console.WriteLine("Equivalent Number : " + (byte)ch); // conversion implicit & explicit
+                Console.WriteLine("The minimum and maximum value size : " + char.MinValue + " " + char.MaxValue);
+                Console.WriteLine("The char size : " + sizeof(char));
+                Console.WriteLine("Enter first number");
+                a = Convert.ToInt32(Console.ReadLine());
+                 Console.WriteLine("Enter second number");
+                b = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Sum of 2 numbers : " + (a+b));
+                Console.ReadKey();
+            }
+        }
+
+     }
+       
+    
+    Integer.parseInt(ch);
+    
+    int.TryParse();without throwing exception 
+    Convert.ToInt32(); // exception 
+  
+    
+
+
+In C# program will start from the Main() which is the entry point of your project 
+
+
+class and the object 
+
+what is class -- IT is a blue print of your program structure
+what is and object --- Object is a real time entity (has some existence (like its
+own properties and behaviour(action -- Method)) )
+What is Method -- Method is some set of statements or instructions
+
+for eg:
+
+ public void Display() 
+ { 
+    int a =10;
+    Console.Writeline("Display method called"); 
+    }
+
+
+
+
+class Program{                        class Student{
+
+static void Main()                    public void Display(){
+{
+    // Class reference variable is 
+    // pointing to an object
+   Student s = new Student();                                 Console.WriteLine("sffhkfh");
+     s.Display();
+}
+                                           }
+}
+
+              
+              Day-2 Notes
+                
+
+BCL : Core Libraries
+System
+System.Collections
+System.IO
+System.Threading
+
+CLR :
+JIT Compilation
+Garbage Collections
+Exception Handling 
+Security
+Thread Management
+
+
+JDK(JVM + class libraries)
+
+
+All user defined classes Employee , Program  are inherited from using System.Object 
+which gives you some predefined methods
+like 
+ToString()
+Equals()
+GetHashCode()
+GetType()
+    
+    
+ 
+  // See https://aka.ms/new-console-template for more information
+class Start
+{
+
+static void Main()
+{
+
+    Console.WriteLine(" Entry Point of your program");
+    Employee e = new Employee();
+    e.Input();
+    e.Display();
+
+}
+
+}
+              
+              
+              class Employee
+{
+
+
+public void Input()
+{
+
+
+     Console.WriteLine("Enter the first number : ");
+              int  a =  Convert.ToInt32(Console.ReadLine());
+                   Console.WriteLine("Enter the second number : ");
+              int  b =  Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Sum of 2 numbers : " + (a+b));
+                Console.ReadKey();
+}
+   public void Display()
+   {
+    
+    Console.WriteLine("Employee class Method called");
+
+    
+   }
+
+}
+
+
+Control Statements :
+
+which gives the flow of execution in a C# program so there are three types:
+1. Sequential  -- step by step
+2. Conditional -- Decision based (if/else/switch)
+3. Branch Execution-- (break/continue/return)
+4. Iterative -- Loops  -- (for/while/do while)
+
+
+syntax:
+
+int age;
+if(age>25)
+{
+  Console.WriteLine("You are eligible for a loan");
+}
+else{
+ Console.WriteLine("You are not eligible for a loan");
+
+}
+
+//Multiple Conditional
+if(age>25)
+{
+ CWL( you are eligible for loan );
+}
+else if (age >18)
+{
+
+  CWL( you are eligible for loan and voting both);
+}
+else{
+
+}
+
+
+if(country == "India")
+{
+
+  if(state == "Delhi")
+  {
+
+  }
+  else
+  {
+
+  }
+}
+else{
+
+}
+
+
+------ question to practice -----------
+
+Scenario – “Campus Canteen Coupon Tracker”
+Your university canteen issues electronic meal coupons to students every morning.
+
+A coupon has a value in rupees (whole number — int).
+
+At most 100 coupons are issued per day.
+
+Throughout the day students redeem coupons at the counter.
+
+When a coupon is redeemed, the cashier types its value into the system.
+
+At closing time the manager wants a summary of the day:
+
+Total number of coupons redeemed.
+
+Total rupee value of all coupons redeemed.
+
+Highest‑value coupon redeemed (and its position in the list, i.e., first, second …).
+
+A category report based on coupon value:
+
+≤ 50 → “Small”
+
+51 – 100 → “Medium”
+
+> 100 → “Large”
+The program must print how many coupons fall in each category.
+
+Write a console application that satisfies the following:
+
+Input phase
+
+First read n, the number of coupons redeemed (1 ≤ n ≤ 100).
+
+Then read n coupon values (each a positive int) and store them in a single‑dimensional int array.
+
+Processing phase
+
+Use a suitable loop (for or while) to compute the required statistics.
+
+Use either an if/else if/else chain or a switch expression to classify each coupon value into “Small”, “Medium”, or “Large”.
+
+Output phase
+
+Display, with clear labels,
+
+(a) total coupons,
+
+(b) total value,
+
+(c) highest value and its 1‑based position in the input list,
+
+(d) counts for each category.
+
+Sample Input/Output
+
+Enter number of coupons: 7
+Enter coupon values, separated by spaces:
+40 65 120 50 90 200 35
+
+----- Daily Coupon Summary -----
+Total coupons redeemed  : 7
+Total value collected   : 600
+Highest coupon redeemed : 200 (coupon #6)
+
+Category breakdown
+Small  (≤50)   : 3
+Medium (51-100): 2
+Large  (>100)  : 2
+Notes / Constraints
+
+Use appropriate data types (int for counts and coupon values; string for prompts/output).
+
+Do not use collections other than a basic one‑dimensional array.
+
+Ensure your program works for edge cases:
+
+exactly one coupon;
+
+all coupons in the same category;
+
+highest value appears more than once (report the first position).
