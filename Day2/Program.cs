@@ -8,8 +8,8 @@ class Program
         Employee e = new Employee();
         e.Input();
         e.Display();
-        Console.WriteLine(e.GetType());
-        Console.WriteLine(e.GetHashCode());
+        // Console.WriteLine(e.GetType());
+        // Console.WriteLine(e.GetHashCode());
 
     }
 }

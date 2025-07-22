@@ -48,10 +48,10 @@ class LoopProgram
 
       int[] scores = {20,21,22}; // here is dynamic allocation
 
-      // Array is fast in searching , static in nature
+        // Array is fast in searching , static in nature
 
-      // Matrix
-      int[,] = new int[2,3] // means 2 rows , 3 columns
+        // Matrix
+        int[,] mat = new int[2, 3]; // means 2 rows , 3 columns
 
 
 
