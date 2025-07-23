@@ -78,16 +78,12 @@
 
 //             }
 //             foreach (Status st in Enum.GetValues(typeof(Status)))
-//                     {
-//                         Console.WriteLine(st);
-//                     }
+//             {
+//                 Console.WriteLine(st);
+//             }
 //         }
 
-//     }   
-    
-    
-
-
+//     }
 
 
 // }

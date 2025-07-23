@@ -2,6 +2,7 @@
 
 class Program
 {
+    /*
     static void Main()
     {
         string text = "Csharp Language";
@@ -97,4 +98,5 @@ class Program
 
 
     }
+    */
 }
