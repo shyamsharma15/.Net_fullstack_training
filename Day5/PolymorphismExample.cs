@@ -1,6 +1,6 @@
 ﻿using System;
 
-//The ability to take many forms 
+//The ability to take many forms
 /*method overloading -- where all methods in a class are with the same name
 but the arguments will differ (either datatype will be different or the sequence of arguments are different or order of arguments are different)
 static binding -- when compiler will identify which method

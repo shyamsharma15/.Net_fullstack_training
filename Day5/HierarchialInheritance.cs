@@ -9,7 +9,9 @@ sub class , derived class  */
 /*Types of Inheritance*/
 // Hierarchical inheritance --- When multiple child classes inherit the same base class
 
-public class Person 
+
+/*
+public class Person
 {
     //properties 
     protected string Name { get; set; }
@@ -75,5 +77,6 @@ public class Teacher : Person
     }
 
 }
+*/
 
 // there is HR --NameOFHR{get; set;} virtual SalaryDisplay() , AdminIncharge override , Employee  Employee e = new Employee(); e.SalaryDisplay()

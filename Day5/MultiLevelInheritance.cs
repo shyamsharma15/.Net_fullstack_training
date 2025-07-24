@@ -1,7 +1,4 @@
 
-
-
-
 // /*Inheritance --- When a child class is inheriting some of the properties of base class 
 
 // In Inheritane we use some conventions like base class , super class , parent class

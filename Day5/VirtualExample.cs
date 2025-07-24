@@ -71,31 +71,31 @@ public class MainProgram
 jo ki actual method overiding ka example nhi hai */
 
 
-public class Father
-{
-    public virtual void Identity()
-    {
-        Console.WriteLine("The Aadhaar no of father is 246434 ");
-    }
+// public class Father
+// {
+//     public virtual void Identity()
+//     {
+//         Console.WriteLine("The Aadhaar no of father is 246434 ");
+//     }
 
 
-}
+// }
 
-public class Child : Father
-{
+// public class Child : Father
+// {
 
-    public override void Identity()
-    {
-        Console.WriteLine("The Aadhaar no of Child is 12345");
-    }
+//     public override void Identity()
+//     {
+//         Console.WriteLine("The Aadhaar no of Child is 12345");
+//     }
 
-}
+// }
 
-public class MainProgram
-{
-    static void Main()
-    {
-        Father f = new Child();
-        f.Identity();
-    }
-}
+// public class MainProgram
+// {
+//     static void Main()
+//     {
+//         Father f = new Child();
+//         f.Identity();
+//     }
+// }
